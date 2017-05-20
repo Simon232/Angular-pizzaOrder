@@ -1,2 +1,1 @@
-# angular-pizzaOrder
-# angular-pizzaOrder
+# Angular practise
