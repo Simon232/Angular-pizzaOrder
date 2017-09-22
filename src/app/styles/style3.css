@@ -1,0 +1,185 @@
+/* use max-width: in the CSS instead of width: to provide a maximum size and 
+then have it scale down if the content gets smaller, but what you're asking 
+is a pretty core concept of responsive design
+*/
+
+body { 
+  margin: 0; 
+  background: #fff7e6; 
+}
+
+@font-face {
+    font-family: BreeSerif;
+    src: url("BreeSerif-Regular.otf") format("opentype");
+}
+
+#header { 
+  position: relative;
+}
+
+#white_box {
+  position: absolute;
+  z-index: 1;
+  top: calc(50% - 50px);
+  left: calc(50% - 175px);
+  width: 350px;
+  height: 100px;
+}
+
+#foreground_text {
+  padding: 15px 50px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: BreeSerif;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+header div {
+  -ms-flex: auto;
+  flex: auto;
+  width: 100%;
+  margin: .5vw;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+}
+
+.container-fluid {
+  padding-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+}
+
+.container {
+  padding: 0px;
+}
+
+
+
+/* carousel start */
+.myCarouselItem {
+  padding-left: 0px;
+}
+
+a .left .carousel-control {
+  left: 100px;
+}
+
+.carousel-control {
+  background-image: none;
+  left: -80px;
+  color: black;
+  font-size: 50px;
+  opacity: 1;
+  text-shadow: none;
+  padding-top:10%;
+  width:5%;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+  right: -80px;
+  filter: none;
+}
+
+.carousel-control:hover {
+  color: red;
+}
+
+span {
+  float: right;
+  padding: 0px 9px;
+}
+/* carousel end */
+
+
+
+/* button start */
+#mymain {
+  text-align: center;
+  width: 100%;
+}
+
+#mymain button {
+  background-color: #ccffcc;
+  border: none;
+  color: black;
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px;
+  font-family: BreeSerif;
+  font-size: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  width: 30%;
+}
+/* button end */
+
+
+h2 {
+  float: left;
+  font-family: BreeSerif;
+  font-size: 20px;
+  font-size: 2rem;
+  margin: 0px 0px;
+  padding: 20px 0px;
+  text-transform: uppercase;
+}
+
+p {
+  float: left;
+  display: block;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  font-size: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 8px 0px;
+}
+
+a {
+  font-size: 10px; 
+  font-size: 1rem; 
+  text-transform: uppercase;
+}
+
+section.row div.col-md-4.col-sm-6.col-xs-12 { 
+  width: 33.33%;
+  line-height: 100%;
+  padding: 0 0;
+}
+
+section.row div.col-md-4.col-sm-6.col-xs-12:first-child { 
+  float: left;
+  width: calc(33.33% - 20px);
+  margin: 0 30px 0 0;
+  line-height: 100%;
+}
+
+section.row div.col-md-4.col-sm-6.col-xs-12:nth-child(2) {
+  width: calc(33.33% - 20px);
+  margin: 0px;
+  line-height: 100%;
+} 
+
+section.row div.col-md-4.col-sm-6.col-xs-12:last-child { 
+  float: right;
+  width: calc(33.33% - 20px);
+  margin: 0 0 0 30px;
+  line-height: 100%;
+}
