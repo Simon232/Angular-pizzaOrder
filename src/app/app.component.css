@@ -2,23 +2,53 @@
 @import 'bootstrap.min.css';
 @import 'bootstrap-theme.min.css';
 */
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+header, ul li, h2 {
+	width: 50%;
+  	margin: 0 auto;
 }
 
-ul li h2 a {
+h1 {
+	color: #369;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 200%;
+}
+
+h2 {
+	color: #369;
+}
+
+a {
+	color: #e60000;
+	text-align: center;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+ul.list {
 	text-align:center;
 	list-style-type: none;
 	text-decoration: none;
 }
 
-div {
-	background: yellow;
+.container {
+	background: #ffffcc;
 }
 
 .img-responsive{
-	
-	position:center;
+	width: 500px;
+  	margin: 0 auto;
+	position: center;
+}
+
+.img-drinks{
+	width: 20%;
+  	margin: 0 auto;
+	position: center;
+}
+
+.drinks {
+	width: 50%;
+  	margin: 0 auto;
+	font-size: 150%;
+	margin: 30px 10px;
 }

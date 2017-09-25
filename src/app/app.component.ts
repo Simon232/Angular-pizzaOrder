@@ -1,13 +1,27 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component ({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  // my code
-  
-/*  styles: ['div { background: yellow; }']*/
 })
+
 export class AppComponent {
-  title = 'app';
+  title: string = 'app';
+  drinkList: any[] = [ {
+  	'name': 'Fanta', 
+  	'price': 11,
+  	"url": "assets/fanta.jpg"
+  },
+  {
+   'name': 'Cola', 
+   'price': 12,
+   "url": "assets/cola.png"
+  },
+  {
+    'name': 'Water', 
+    'price': 3,
+    "url": "assets/water.jpg"
+  } ];
+  appStatus: boolean = true;
 }
